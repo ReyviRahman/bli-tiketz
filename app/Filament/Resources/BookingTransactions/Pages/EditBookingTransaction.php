@@ -27,7 +27,7 @@ class EditBookingTransaction extends EditRecord
     {
         $data['participants'] = $this->record->participants->map(function ($participant) {
             return [
-                'nama' => $participant->name,
+                'name' => $participant->name,
                 'occupation' => $participant->occupation,
                 'email' => $participant->email,
             ];
